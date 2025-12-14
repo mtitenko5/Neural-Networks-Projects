@@ -1,0 +1,18 @@
+stages:
+  run_notebook:
+    cmd: py -m nbconvert --execute --to notebook --inplace spaceship_titanic_final.ipynb
+    deps:
+      - spaceship_titanic_final.ipynb
+      - data/train1.csv
+      - data/test1.csv
+      - params.yaml
+    params:
+      - models.logistic_regression
+      - models.random_forest
+      - models.catboost
+    outs:
+      - submission.csv
+    metrics:
+      - metrics/accuracy_metrics.json:
+          cache: false
+

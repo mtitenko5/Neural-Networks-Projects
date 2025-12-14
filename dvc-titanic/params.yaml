@@ -1,0 +1,15 @@
+models:
+  logistic_regression:
+    C: 1.0
+    max_iter: 500
+    random_state: 42
+
+  random_forest:
+    n_estimators: 1000
+    max_depth: 10
+    random_state: 42
+  
+  catboost:
+    iterations: 500
+    learning_rate: 0.05
+    depth: 6
