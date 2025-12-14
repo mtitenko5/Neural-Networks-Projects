@@ -1,0 +1,14 @@
+{
+  "LogisticRegression": {
+    "train_accuracy": 0.7456665132689063,
+    "test_accuracy": 0.7428702851885924
+  },
+  "RandomForest": {
+    "train_accuracy": 0.8243595643503605,
+    "test_accuracy": 0.7608095676172953
+  },
+  "CatBoost": {
+    "train_accuracy": 0.8271207240374291,
+    "test_accuracy": 0.764949402023919
+  }
+}
